@@ -1,6 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Tokyo!</title>
+    <link rel="icon" href="japan.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="page about Tokyo">
+    <meta name="keywords" content="Tokyo, Japan, Capital of Japan">
+    <meta name="author" content="Sho'le Movaffaghi">
 </head>
 <!-- style="background-color: rgb(231, 231, 231);" -->
 <body >
@@ -15,16 +21,15 @@
 
             <input type="search" style="width:220px; height:30px">
 
-            <h3 style="font-family:sans-serif; padding-left: 20px; color:rgb(141, 26, 26)"><i>see more details about tokyo:</i></h3>
+            <h3 style="font-family:sans-serif; padding-left: 20px; color:rgb(141, 26, 26)"><i>click to see more details about tokyo:</i></h3>
 
-            <ul style="font-family:sans-serif; color:rgb(29, 8, 8); line-height:32px; list-style:square; padding-left:40px;width:200px;">
-                <li>tokyo festivals</li>
-                <li>nightlife</li>
-                <li>shopping places</li>
-                <li>tour guides</li>
-                <li>tourism in tokyo</li>
-                <li>about economies</li>
-                <li>local food</li>
+            <ul style="cursor:pointer; font-family:sans-serif; color:rgb(29, 8, 8); line-height:32px; list-style:square; padding-left:40px;width:200px;">
+                <li><a href="#history">history of Tokyo</a></li>
+                <li><a href="#table">Table of flags</a></li>
+                <li><a href="#video">small video</a></li>
+                <li><a href="#about">about Tokyo</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Tourism_in_Tokyo" target="_blank">tourism in tokyo</a></li>
+                <li><a href="https://travel.rakuten.com/campaign/ranking/cuisine/tokyo/" target="_blank">local food</a></li>
             </ul>
 
             <div style="width: 90%; margin:0 auto; border:1px dashed rgb(105, 29, 101);"></div>
@@ -51,7 +56,7 @@
 
         </div>
 
-        <h2 style="font-family: sans-serif; color:darkred; padding-left: 40px;">About Tokyo</h2>
+        <h2 id="about" style="font-family: sans-serif; color:darkred; padding-left: 40px;">About Tokyo</h2>
 
         <p style="font-family: sans-serif;box-shadow: 0 0 8px 4px #ccc;background-color: rgb(235, 232, 232); font-size: 16px;margin-left:30px; padding-left: 10px; width:1100px; line-height:25px; border:1px solid rgb(207, 207, 207); border-radius: 10px;">
             Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis.
@@ -75,7 +80,7 @@
         
        <img src="tokyo2.jpg" style="float: left; width: 450px; border-radius: 10px; margin-left: 30px;" alt="tokyo pic">
             
-       <h2 style="font-family: sans-serif; color:darkred; margin-left: 500px; margin-bottom: 0;">History of Tokyo</h2>
+       <h2 id="history" style="font-family: sans-serif; color:darkred; margin-left: 500px; margin-bottom: 0;">History of Tokyo</h2>
             
         <p style="font-family: sans-serif; float:right; margin-right:37px; padding-right: 10px;box-shadow: 0 0 8px 4px #ccc;
                 background-color: rgb(235, 232, 232); font-size: 16px; width:630px; line-height:25px; border:1px solid rgb(207, 207, 207); border-radius: 10px;">
@@ -89,7 +94,7 @@
                 the wake of the consistent fires, earthquakes, other devastating disasters that plagued the city. 
         </p>
 
-        <table border="1" cellspacing="3" style="width:770px; height:250px; margin:10px 0 0 30px; border-radius: 10px; float: left;">
+        <table id="table" border="1" cellspacing="3" style="width:770px; height:250px; margin:10px 0 0 30px; border-radius: 10px; float: left;">
             <caption style="color:darkred; font-family:sans-serif; font-size:22px; text-align: left; margin-left: 10px;">
                 <b>Table of Flags in Tokyo</b>
             </caption>
@@ -126,5 +131,17 @@
             </table>
 
             <img src="tokyo4.jpg" style="float: right; width: 330px;border-radius: 10px; margin:35px 30px 0 0;" alt="tokyo image">
+
+            <video id="video" style="width: 150px;" controls>
+                <source src="COM4134-F21- File.mp4" type="video/mp4">
+            </video>
+
+            <footer style="height: 100px; background-color: lightgrey;">
+                <p style="padding-top:10px; text-align: center; font-family: sans-serif; font-size: 20px;">
+                    Thanks for visiting this page.</p>
+                <p style=" text-align: center; font-family: sans-serif; font-size: 14px;">
+                    contact us via email or instagram
+                </p>
+            </footer>
 </body>
 </html>
