@@ -2,28 +2,30 @@
 <html>
 <head>
     <title>Tokyo!</title>
+
     <link rel="icon" href="japan.png">
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="description" content="page about Tokyo">
     <meta name="keywords" content="Tokyo, Japan, Capital of Japan">
     <meta name="author" content="Sho'le Movaffaghi">
+
 </head>
-<!-- style="background-color: rgb(231, 231, 231);" -->
 <body >
-    <h2 align="center" style="font-family:sans-serif;margin:0;line-height:70px; font-size:30px; height:70px;
-    color:rgb(226, 224, 224); background-color:rgb(189, 72, 72);">Tokyo, the capital of Japan.</h2>
+    <h2 id="header">Tokyo, the capital of Japan.</h2>
     
-    <img src="tokyo3.PNG" style="width:100%; height:370px;" title="pic of tokyo" alt="tokyo pic">
+    <img id ="headerPic" src="tokyo3.PNG" title="pic of tokyo" alt="tokyo pic">
         
-    <div style="width:320px; margin-top:15px; border:1px solid darkgray; border-radius: 10px; height: 1000px; float: right;">
+    <div id="rightSide">
 
-            <p style="width:60px;font-family:sans-serif; font-size:18px;padding-left:15px; display: inline-block;">search:</p>
+            <p id="searchText">search:</p>
 
-            <input type="search" style="width:220px; height:30px">
+            <input id="searchBox" type="search">
 
-            <h3 style="font-family:sans-serif; padding-left: 20px; color:rgb(141, 26, 26)"><i>click to see more details about tokyo:</i></h3>
+            <h3 class="rightHeading"><i>click to see more details about tokyo:</i></h3>
 
-            <ul style="cursor:pointer; font-family:sans-serif; color:rgb(29, 8, 8); line-height:32px; list-style:square; padding-left:40px;width:200px;">
+            <ul class="list">
                 <li><a href="#history">history of Tokyo</a></li>
                 <li><a href="#table">Table of flags</a></li>
                 <li><a href="#video">small video</a></li>
@@ -32,11 +34,11 @@
                 <li><a href="https://travel.rakuten.com/campaign/ranking/cuisine/tokyo/" target="_blank">local food</a></li>
             </ul>
 
-            <div style="width: 90%; margin:0 auto; border:1px dashed rgb(105, 29, 101);"></div>
+            <div class="line"></div>
 
-            <h3 style="font-family: sans-serif; padding-left:20px; color:rgb(156, 55, 55);"><i>Details About the City</i></h3>
+            <h3 class="rightHeading"><i>Details About the City</i></h3>
 
-            <ul style="font-family: sans-serif; color:rgb(29, 8, 8); line-height: 32px; padding-left: 40px;">
+            <ul class="list">
                 <li>street names</li>
                 <li>placement in country</li>
                 <li>safety</li>
@@ -44,21 +46,19 @@
                 <li>green parks</li>
             </ul>
 
-            <div style="width: 90%; margin:0 auto; border:1px dashed rgb(105, 29, 101);"></div>
+            <div class="line"></div>
 
-            <h4 style="font-family: sans-serif; padding-left:20px; color:rgb(141, 26, 26);">
-                <i>write your ideas about Tokyo here:</i>
-            </h4>
+            <h3 class="rightHeading"><i>write your ideas about Tokyo:</i></h3>
 
                 <textarea name="text1" rows="8" cols="30" style="margin-left: 30px;"></textarea>
 
-                <img src="tokyo5.jpg" style="width:280px; border-radius: 10px; margin:15px 20px 0;" alt="tokyo pic">
+                <img id="littlePic" src="tokyo5.jpg" alt="tokyo pic">
 
         </div>
 
-        <h2 id="about" style="font-family: sans-serif; color:darkred; padding-left: 40px;">About Tokyo</h2>
+        <h2>About Tokyo</h2>
 
-        <p style="font-family: sans-serif;box-shadow: 0 0 8px 4px #ccc;background-color: rgb(235, 232, 232); font-size: 16px;margin-left:30px; padding-left: 10px; width:1100px; line-height:25px; border:1px solid rgb(207, 207, 207); border-radius: 10px;">
+        <p class="p p1">
             Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis.
          It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities,
           towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo.
@@ -67,23 +67,22 @@
             A few decades later, Edo had grown into one of the world's most populous cities. With the Meiji Restoration of 1868, the emperor and capital moved from Kyoto to Edo, which was renamed Tokyo ("Eastern Capital").
              Large parts of Tokyo were destroyed in the Great Kanto Earthquake of 1923 and in the air raids of 1945.</p>
             
-        <img src="tokyo1.jpg" style="float: right; width: 500px; border-radius: 10px; margin-right:37px;" alt="tokyo pic">
+        <img src="tokyo1.jpg" class="img1" alt="tokyo pic">
             
-        <h2 style="font-family: sans-serif; color:darkred; padding-left: 40px;">More Details</h2>
+        <h2>More Details</h2>
            
-        <p style="font-family: sans-serif;box-shadow: 0 0 8px 4px #ccc; background-color: rgb(235, 232, 232); font-size: 16px;margin-left:30px; padding-left: 10px; width:580px; line-height:25px; border:1px solid rgb(207, 207, 207); border-radius: 10px;">
+        <p class="p p2">
                 Tokyo is the largest urban economy in the world by gross domestic product, and is categorized as an Alpha+
              city by the Globalization and World Cities Research Network. Part of an industrial region that includes the cities of Yokohama,
               Kawasaki, and Chiba, Tokyo is Japan's leading center of business and finance. In 2019, it hosted 36 of the Fortune Global 500 companies.
                In 2020, it ranked fourth on the Global Financial Centres Index, behind New York City, London, and Shanghai. Tokyo has the world's tallest tower, Tokyo Skytree, and the world's largest underground floodwater diversion facility, MAOUDC. The Tokyo Metro Ginza Line is the oldest underground metro line in East Asia (1927).
                The city has hosted multiple international events, including the 1964 Summer Olympics and Paralympics</p>
         
-       <img src="tokyo2.jpg" style="float: left; width: 450px; border-radius: 10px; margin-left: 30px;" alt="tokyo pic">
+       <img src="tokyo2.jpg" class="img2" alt="tokyo pic">
             
-       <h2 id="history" style="font-family: sans-serif; color:darkred; margin-left: 500px; margin-bottom: 0;">History of Tokyo</h2>
+       <h2 id="history">History of Tokyo</h2>
             
-        <p style="font-family: sans-serif; float:right; margin-right:37px; padding-right: 10px;box-shadow: 0 0 8px 4px #ccc;
-                background-color: rgb(235, 232, 232); font-size: 16px; width:630px; line-height:25px; border:1px solid rgb(207, 207, 207); border-radius: 10px;">
+        <p class="p p3">
                 Tokyo was originally a small fishing village, Edo, in what was formerly part of the old Musashi Province. Edo was first
                 fortified by the Edo clan, in the late twelfth century. In 1457, Ōta built Edo Castle.
                 In 1590, Ieyasu moved from Mikawa Province (his lifelong base) to the Kantō region. When he became shōgun in 1603,
@@ -94,35 +93,35 @@
                 the wake of the consistent fires, earthquakes, other devastating disasters that plagued the city. 
         </p>
 
-        <table id="table" border="1" cellspacing="3" style="width:770px; height:250px; margin:10px 0 0 30px; border-radius: 10px; float: left;">
-            <caption style="color:darkred; font-family:sans-serif; font-size:22px; text-align: left; margin-left: 10px;">
+        <table id="table" cellspacing="3">
+            <caption>
                 <b>Table of Flags in Tokyo</b>
             </caption>
-                <tr style=" font-family: sans-serif; font-size: 16px; background-color: darksalmon;">
+                <tr id="firstLine">
                     <th>Flag Name</th>
                     <th>Transcription</th>
                     <th>Area</th>
                     <th>Population</th>
                 </tr>
-                <tr style="font-family: sans-serif; font-size: 14px; text-align: center;">
+                <tr class="tr1">
                     <td>Adachi-ku</td>
                     <td>Adachi Ward</td>
                     <td>53.25	</td>
                     <td>674,067</td>
                 </tr>
-                <tr style="font-family: sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 203, 185);">
+                <tr class="tr1 tr2">
                     <td>Arakawa-ku</td>
                     <td>Arakawa Ward</td>
                     <td>10.16</td>
                     <td>213,648</td>
                 </tr>
-                <tr style="font-family: sans-serif; font-size: 14px; text-align: center;">
+                <tr class="tr1">
                     <td>Bunkyō-ku</td>
                     <td>Bunkyō Ward</td>
                     <td>11.29</td>
                     <td>223,389</td>
                 </tr>
-                <tr style="font-family: sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 203, 185);">
+                <tr class="tr1 tr2">
                     <td>Chiyoda-ku</td>
                     <td>Chiyoda Ward</td>
                     <td>11.66</td>
@@ -130,18 +129,15 @@
                 </tr>
             </table>
 
-            <img src="tokyo4.jpg" style="float: right; width: 330px;border-radius: 10px; margin:35px 30px 0 0;" alt="tokyo image">
+            <img src="tokyo4.jpg" class="img3" alt="tokyo image">
 
-            <video id="video" style="width: 150px;" controls>
+            <video id="video" controls>
                 <source src="COM4134-F21- File.mp4" type="video/mp4">
             </video>
 
-            <footer style="height: 100px; background-color: lightgrey;">
-                <p style="padding-top:10px; text-align: center; font-family: sans-serif; font-size: 20px;">
-                    Thanks for visiting this page.</p>
-                <p style=" text-align: center; font-family: sans-serif; font-size: 14px;">
-                    contact us via email or instagram
-                </p>
+            <footer id="footer">
+                <p class="p_f">Thanks for visiting this page.</p>
+                <p class="p_f pf2">contact us via email or instagram </p>
             </footer>
 </body>
 </html>
