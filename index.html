@@ -59,9 +59,10 @@
 
     </div>
 
-    <div id="column"></div>
+    <div class="column"></div>
 
     <div id="center">
+        <button onclick="changeMood()">dark mode</button>
         <h2>About Tokyo</h2>
 
         <p class="p p1">
@@ -143,9 +144,41 @@
         </div>
 
     </div>
-            <footer id="footer">
+            <footer class="footer">
                 <p class="p_f">Thanks for visiting this page.</p>
                 <p class="p_f pf2">contact us via email or instagram </p>
             </footer>
+
+    <script>
+        
+        function changeMood(){
+            var v = document.body;
+            v.classList.toggle("dark-v1");
+
+            var v1 = document.querySelectorAll("p");
+            var i;
+            for( i=0 ; i<v1.length ; i++){
+                v1[i].classList.toggle("dark-v1");
+            }
+
+            var v2 = document.querySelectorAll("h2, h3, i");
+            var j;
+            for( j=0 ; j<v2.length ; j++){
+                v2[j].classList.toggle("dark-v3");
+            }
+
+            var v3 = document.querySelector("footer");
+            v3.classList.toggle("dark-v1");
+
+            var v4 = document.querySelectorAll("ul,li");
+            var k;
+            for(k=0 ; k<v4.length ; k++){
+                v4[k].classList.toggle("dark-v4");
+            }
+
+        }
+
+
+    </script>
 </body>
 </html>

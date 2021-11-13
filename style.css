@@ -25,7 +25,7 @@
     width: 100%;
 }
 
-.flex-container #column{
+.flex-container .column{
     width: 40px;
     background-color: lightgray;
     border-radius: 10px;
@@ -113,6 +113,15 @@
     width : 1140px;
     height: 1550px;
 }
+
+#center button{
+    width : 90px;
+    height: 30px;
+    font-size: 15px;
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
 h2{
     color:darkred; 
     padding-left: 20px;
@@ -202,19 +211,33 @@ img{
     width: 500px;
     left: 300px;
     border: 2px solid gray;
-    box-shadow:0 0 10px 10px #ccc;
+    /* box-shadow:0 0 10px 10px #ccc; */
 }
 
-#footer{
+.footer{
     height: 100px;
     background-color: lightgrey;
 }
-#footer > .p_f{
+.footer > .p_f{
     position: relative;
     top :30px;
     text-align: center; 
     font-size: 20px;
 }
-#footer > .pf2{
+.footer > .pf2{
     font-size: 14px;
+}
+
+.dark-v1{
+    color : #f5f5f5;
+    box-shadow: none;
+    background-color: rgb(44, 44, 44);
+}
+
+.dark-v3{
+    color : rgb(216, 39, 39);
+}
+
+.dark-v4{
+    color : rgb(235, 116, 4);
 }
