@@ -1,7 +1,8 @@
 *{
     font-family: sans-serif;
 }
-#header{
+
+#headerPart #header{
     text-align: center;
     line-height: 70px;
     font-size: 30px;
@@ -11,18 +12,38 @@
     margin :0;
 }
 
-#headerPic{
+#headerPart #headerPic{
     border-radius: 0;
     width:100%;
     height:370px;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-container #column{
+    width: 40px;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.flex-container #rightSide{
+    display: flex;
+    flex-direction: column;
+}
+
 #rightSide{
-    width:320px;
+    width:300px;
     margin-top:15px;
     border:1px solid darkgray;
     border-radius: 10px; 
-    height: 1000px; 
+    height: 1550px; 
     float: right;
 }
 
@@ -32,20 +53,24 @@
     border:1px dashed rgb(105, 29, 101);
 }
 
-#rightSide > #searchText{
-    width:60px;
+#rightSide .search-container{
+    display: flex;
+    flex-direction: row;
+}
+#rightSide .search-container > #searchText{
+    width:50px;
     font-size:18px;
-    padding-left:15px;
-    display: inline-block;
+    padding-left:10px;
 }
 
-#rightSide > #searchBox{
-    width:220px;
+#rightSide .search-container > #searchBox{
+    width:200px;
+    margin : 10px 0 0 15px;
     height:30px;
 }
 
 #rightSide > .rightHeading{
-    padding-left: 20px; 
+    padding-left: 10px; 
     color:rgb(141, 26, 26);
 }
 
@@ -78,12 +103,19 @@
 #rightSide > #littlePic{
     width:280px;
     border-radius: 10px; 
-    margin:15px 20px 0;
+    margin:15px 10px 0;
 }
 
+#center{
+    margin-top:15px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    width : 1140px;
+    height: 1550px;
+}
 h2{
     color:darkred; 
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 #history{
@@ -96,7 +128,7 @@ h2{
     box-shadow: 0 0 8px 4px #ccc;
     background-color: rgb(235, 232, 232); 
     font-size: 16px;
-    margin-left:30px; 
+    margin-left:10px; 
     padding-left: 10px; 
     line-height:25px; 
     border:1px solid rgb(207, 207, 207); 
@@ -113,9 +145,9 @@ h2{
     margin-left: 0;
     padding-left: 0;
     float:right; 
-    margin-right:37px; 
+    margin-right:20px; 
     padding-right: 10px;
-    width:630px;
+    width:610px;
 }
 
 img{
@@ -123,7 +155,7 @@ img{
     float: right;
 }
 .img1{
-    width: 500px; 
+    width: 480px; 
     margin-right:37px;
 }
 .img2{
@@ -132,12 +164,12 @@ img{
      margin-left: 30px;
 }
 .img3{
-    width: 330px;
+    width: 310px;
     margin:35px 30px 0 0;
 }
 
 #table{
-    width:770px; 
+    width:750px; 
     height:250px;
     margin:10px 0 0 30px; 
     border-radius: 10px; 
@@ -168,7 +200,7 @@ img{
     position: relative;
     top: 30px;
     width: 500px;
-    right: 300px;
+    left: 300px;
     border: 2px solid gray;
     box-shadow:0 0 10px 10px #ccc;
 }
