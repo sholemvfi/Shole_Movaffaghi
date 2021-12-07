@@ -11,6 +11,20 @@
     <meta name="keywords" content="Tokyo, Japan, Capital of Japan">
     <meta name="author" content="Sho'le Movaffaghi">
 
+    <script src="jquery.js"></script>
+    <script>
+        function videoShow(){
+            if($('#showVideo').html() == "show a video!"){
+                console.log("salam");
+                $("video").css("visibility","visible");
+                $("#showVideo").html("hide video");
+            }else if($('#showVideo').html() == "hide video"){
+                $("video").css("visibility","hidden");
+                $("#showVideo").html("show a video!");
+            }
+        }
+    </script>
+
 </head>
 <body >
     <div id="headerPart">
@@ -62,7 +76,7 @@
     <div class="column"></div>
 
     <div id="center">
-        <button onclick="changeMood()">dark mode</button>
+        <button id="changeTheme" onclick="changeMood()">dark mode</button>
         <h2>About Tokyo</h2>
 
         <p class="p p1">
@@ -137,10 +151,13 @@
             </table>
 
             <img src="tokyo4.jpg" class="img3" alt="tokyo image">
+            
+                <video id="video" controls>
+                    <source src="COM4134-F21- File.mp4" type="video/mp4">
+                </video>
+    
+                <button id="showVideo" onclick="videoShow()">show a video!</button>
 
-            <video id="video" controls>
-                <source src="COM4134-F21- File.mp4" type="video/mp4">
-            </video>
         </div>
 
     </div>

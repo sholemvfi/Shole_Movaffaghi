@@ -43,7 +43,7 @@
     margin-top:15px;
     border:1px solid darkgray;
     border-radius: 10px; 
-    height: 1550px; 
+    height: 1570px; 
     float: right;
 }
 
@@ -111,10 +111,10 @@
     border: 1px solid darkgray;
     border-radius: 10px;
     width : 1140px;
-    height: 1550px;
+    height: 1570px;
 }
 
-#center button{
+#center #changeTheme{
     width : 90px;
     height: 30px;
     font-size: 15px;
@@ -206,12 +206,21 @@ img{
 }
 
 #video{
+    visibility: hidden;
     position: relative;
-    top: 30px;
+    top: 70px;
     width: 500px;
     left: 300px;
     border: 2px solid gray;
     /* box-shadow:0 0 10px 10px #ccc; */
+}
+
+#showVideo{
+    position: relative;
+    top : -240px; 
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
 }
 
 .footer{
