@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+
+<style>
+
+form{
+    width: 500px;
+    margin: 100px auto;
+}
+
+#input{
+    width: 300px;
+    height: 50px;
+    border:2px solid gray;
+    border-radius: 30px;
+    background: lightgray;
+    text-indent: 10px;
+    font-size: 18px;
+}
+
+#button{
+    width: 100px;
+    height: 50px;
+    background: lightgray;
+    border:2px solid gray;
+    border-radius: 30px;
+}
+
+#button:hover{
+    background: pink;
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+<form action="./php.php" method="get">
+    <input type="text" name="input" id="input">
+    <button id="button">calculate</button>
+</form>
+
+</body>
+</html>
